@@ -10,8 +10,6 @@ for root, dirs, files in os.walk("."):
         if fn == "BFDInfo.xml":
             path = os.path.join(root, fn)
             dirName = os.path.split(root)[1]
-            
-            # determine subclass that should be set (if any) from the directory's name
             subclass = None
             if dirName[:3] == "Tom":
                 subclass = filter(lambda x: x in dirName, ("Hi", "Mid", "Floor"))
@@ -26,9 +24,6 @@ for root, dirs, files in os.walk("."):
                 subclass = "China"
             if "Splash" in dirName:
                 subclass = "Splash"
-                
-            # if we determined a subclass that should be set, apply it unless 
-            # subclass information is already present
             if subclass is not None:
                 print path
                 content = readfile(path)
@@ -44,3 +39,5 @@ for root, dirs, files in os.walk("."):
                         print "  No action needed (subclass '%s' already present)" % subclass
                     else: 
                         print "  Subclass '%s' found, but determined '%s'" % (subclass_found, subclass)
+
+raw_input("Execution complete. Press Enter to continue...")
