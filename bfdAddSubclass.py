@@ -5,7 +5,8 @@ def readfile(path):
     with file(path, "r") as f:
         return f.read()
 
-for root, dirs, files in os.walk("."):
+def onerror(e): print e                                                  
+for root, dirs, files in os.walk(".", followlinks=True, onerror=onerror):
     for fn in files:
         if fn == "BFDInfo.xml":
             path = os.path.join(root, fn)
