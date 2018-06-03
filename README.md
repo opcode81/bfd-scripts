@@ -15,7 +15,7 @@ The sample library ***BFD London Sessions*** has problems pertaining to both asp
 
 1. Copy the script you want to apply to the BFD sample library location, e.g. to the "BFD London Sessions" directory.
 
-2. Run the script from the command line as described below.
+2. Run the script from the command line as described below, or, under Windows, by double-clicking them in Windows Explorer (provided that .py files are opened by the Python 2 interpreter).
 
 3. Open BFD3 and, under Tools/Set up content locations, remove and re-add the content path of the library that was affected for the changes to take effect.
 
