@@ -11,7 +11,7 @@ The sample library ***BFD London Sessions*** has problems pertaining to both asp
 
 ## Usage ##
 
-0. The two scripts are written for [Python 2](http://www.python.org "Python 2"), so make sure you have the appropriate interpreter installed.
+0. The two scripts are written for [Python 3](http://www.python.org "Python 3"), so make sure you have the appropriate interpreter installed.
 1. Copy the script you want to apply to the BFD sample library location, e.g. to the "BFD London Sessions" directory.
 2. Run the script from the command line as described below, or, under Windows, by double-clicking them in Windows Explorer (provided that .py files are opened by the Python 2 interpreter).
 3. Make sure the changes take effect:
